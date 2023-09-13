@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.23.5",
-    "@types/node": "20.6.0",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
@@ -20,7 +19,25 @@
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "tailwindcss": "3.3.3"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Portforlio-Projects/petadoption-nextjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Portforlio-Projects/petadoption-nextjs/issues"
+  },
+  "homepage": "https://github.com/Portforlio-Projects/petadoption-nextjs#readme",
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "prisma": "^5.3.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   }
 }
