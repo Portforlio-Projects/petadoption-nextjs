@@ -1,13 +1,7 @@
 import Image from 'next/image';
 import { UserButton } from '@clerk/nextjs';
+import Navbar from '@/components/navbar';
 
 export default function Home() {
-  return (
-    <div>
-      <nav className='flex justify-between'>
-        <p>Logo</p>
-        <UserButton afterSignOutUrl='/' />
-      </nav>
-    </div>
-  );
+  return <div>Home page</div>;
 }

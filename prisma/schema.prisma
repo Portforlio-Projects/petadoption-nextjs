@@ -17,6 +17,5 @@ model User {
   lastName     String
   age          Int
   phoneNumber  String
-     
 }
 
