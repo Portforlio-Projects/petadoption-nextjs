@@ -1,17 +1,18 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import MainNav from './main-nav';
-import Container from './ui/container';
+import MainNav from "./main-nav";
+import Container from "./ui/container";
+import { ModeToggle } from "./theme-toggle";
 
 interface NavbarProps {}
 
 const Navbar: React.FC<NavbarProps> = () => {
   return (
     <Container>
-      <div className='p-4 flex justify-between items-center'>
+      <div className="p-4 flex justify-between items-center">
         <Link
-          href='/'
-          className='font-bold uppercase leading-tight tracking-tighter'
+          href="/"
+          className="font-bold uppercase leading-tight tracking-tighter"
         >
           Pet Adoption
         </Link>

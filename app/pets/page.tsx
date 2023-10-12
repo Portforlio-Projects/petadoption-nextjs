@@ -5,34 +5,21 @@ import { GetServerSideProps } from "next";
 import PetList from "../../components/petlist";
 import { getAnimals } from "../api/route";
 import { Animal } from "../../types/petfinder";
+import Container from "@/components/ui/container";
 
 interface Props {
   animals: Animal[];
 }
 
-const Home: React.FC<Props> = ({ animals }) => {
+const PetsPage = async () => {
+  const data = await getAnimals();
   return (
-    <div>
-      <PetList animals={animals} />
-    </div>
+    <Container>
+      <div>
+        <PetList animals={data.animals} />
+      </div>
+    </Container>
   );
 };
 
-export const getServerSideProps: GetServerSideProps<Props> = async () => {
-  try {
-    const response = await getAnimals();
-    return {
-      props: {
-        animals: response.animals,
-      },
-    };
-  } catch (error) {
-    return {
-      props: {
-        animals: [],
-      },
-    };
-  }
-};
-
-export default Home;
+export default PetsPage;
